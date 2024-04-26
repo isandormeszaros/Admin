@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="watchesDataSet3" targetNamespace="http://tempuri.org/watchesDataSet3.xsd" xmlns:mstns="http://tempuri.org/watchesDataSet3.xsd" xmlns="http://tempuri.org/watchesDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="watchesConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="watchesConnectionString3 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.admin.Properties.Settings.GlobalReference.Default.watchesConnectionString3" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="alltablesviewTableAdapter" GeneratorDataComponentClassName="alltablesviewTableAdapter" Name="alltablesview" UserDataComponentName="alltablesviewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="watchesConnectionString3 (Settings)" DbObjectName="watches.alltablesview" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `watchName`, `brand`, `price`, `dialColor`, `date`, `box`, `paper`, `caseMaterial`, `strapMaterial`, `movement`, `caseDiameter`, `caseThickness`, `bandWidth`, `dialMaterial`, `quantity`, `country` FROM `watches`.`alltablesview`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="watchName" DataSetColumn="watchName" />
+              <Mapping SourceColumn="brand" DataSetColumn="brand" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="dialColor" DataSetColumn="dialColor" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="box" DataSetColumn="box" />
+              <Mapping SourceColumn="paper" DataSetColumn="paper" />
+              <Mapping SourceColumn="caseMaterial" DataSetColumn="caseMaterial" />
+              <Mapping SourceColumn="strapMaterial" DataSetColumn="strapMaterial" />
+              <Mapping SourceColumn="movement" DataSetColumn="movement" />
+              <Mapping SourceColumn="caseDiameter" DataSetColumn="caseDiameter" />
+              <Mapping SourceColumn="caseThickness" DataSetColumn="caseThickness" />
+              <Mapping SourceColumn="bandWidth" DataSetColumn="bandWidth" />
+              <Mapping SourceColumn="dialMaterial" DataSetColumn="dialMaterial" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="country" DataSetColumn="country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="watchesDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="watchesDataSet3" msprop:Generator_UserDSName="watchesDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="alltablesview" msprop:Generator_TableClassName="alltablesviewDataTable" msprop:Generator_TableVarName="tablealltablesview" msprop:Generator_TablePropName="alltablesview" msprop:Generator_RowDeletingName="alltablesviewRowDeleting" msprop:Generator_RowChangingName="alltablesviewRowChanging" msprop:Generator_RowEvHandlerName="alltablesviewRowChangeEventHandler" msprop:Generator_RowDeletedName="alltablesviewRowDeleted" msprop:Generator_UserTableName="alltablesview" msprop:Generator_RowChangedName="alltablesviewRowChanged" msprop:Generator_RowEvArgName="alltablesviewRowChangeEvent" msprop:Generator_RowClassName="alltablesviewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="watchName" msprop:Generator_ColumnVarNameInTable="columnwatchName" msprop:Generator_ColumnPropNameInRow="watchName" msprop:Generator_ColumnPropNameInTable="watchNameColumn" msprop:Generator_UserColumnName="watchName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="91" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="brand" msprop:Generator_ColumnVarNameInTable="columnbrand" msprop:Generator_ColumnPropNameInRow="brand" msprop:Generator_ColumnPropNameInTable="brandColumn" msprop:Generator_UserColumnName="brand">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" />
+              <xs:element name="dialColor" msprop:Generator_ColumnVarNameInTable="columndialColor" msprop:Generator_ColumnPropNameInRow="dialColor" msprop:Generator_ColumnPropNameInTable="dialColorColumn" msprop:Generator_UserColumnName="dialColor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:int" />
+              <xs:element name="box" msprop:Generator_ColumnVarNameInTable="columnbox" msprop:Generator_ColumnPropNameInRow="box" msprop:Generator_ColumnPropNameInTable="boxColumn" msprop:Generator_UserColumnName="box" type="xs:int" />
+              <xs:element name="paper" msprop:Generator_ColumnVarNameInTable="columnpaper" msprop:Generator_ColumnPropNameInRow="paper" msprop:Generator_ColumnPropNameInTable="paperColumn" msprop:Generator_UserColumnName="paper" type="xs:int" />
+              <xs:element name="caseMaterial" msprop:Generator_ColumnVarNameInTable="columncaseMaterial" msprop:Generator_ColumnPropNameInRow="caseMaterial" msprop:Generator_ColumnPropNameInTable="caseMaterialColumn" msprop:Generator_UserColumnName="caseMaterial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strapMaterial" msprop:Generator_ColumnVarNameInTable="columnstrapMaterial" msprop:Generator_ColumnPropNameInRow="strapMaterial" msprop:Generator_ColumnPropNameInTable="strapMaterialColumn" msprop:Generator_UserColumnName="strapMaterial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="movement" msprop:Generator_ColumnVarNameInTable="columnmovement" msprop:Generator_ColumnPropNameInRow="movement" msprop:Generator_ColumnPropNameInTable="movementColumn" msprop:Generator_UserColumnName="movement">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="caseDiameter" msprop:Generator_ColumnVarNameInTable="columncaseDiameter" msprop:Generator_ColumnPropNameInRow="caseDiameter" msprop:Generator_ColumnPropNameInTable="caseDiameterColumn" msprop:Generator_UserColumnName="caseDiameter" type="xs:double" minOccurs="0" />
+              <xs:element name="caseThickness" msprop:Generator_ColumnVarNameInTable="columncaseThickness" msprop:Generator_ColumnPropNameInRow="caseThickness" msprop:Generator_ColumnPropNameInTable="caseThicknessColumn" msprop:Generator_UserColumnName="caseThickness" type="xs:double" />
+              <xs:element name="bandWidth" msprop:Generator_ColumnVarNameInTable="columnbandWidth" msprop:Generator_ColumnPropNameInRow="bandWidth" msprop:Generator_ColumnPropNameInTable="bandWidthColumn" msprop:Generator_UserColumnName="bandWidth" type="xs:int" />
+              <xs:element name="dialMaterial" msprop:Generator_ColumnVarNameInTable="columndialMaterial" msprop:Generator_ColumnPropNameInRow="dialMaterial" msprop:Generator_ColumnPropNameInTable="dialMaterialColumn" msprop:Generator_UserColumnName="dialMaterial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:int" minOccurs="0" />
+              <xs:element name="country" msprop:Generator_ColumnVarNameInTable="columncountry" msprop:Generator_ColumnPropNameInRow="country" msprop:Generator_ColumnPropNameInTable="countryColumn" msprop:Generator_UserColumnName="country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:alltablesview" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
